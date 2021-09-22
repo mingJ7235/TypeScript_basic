@@ -18,3 +18,14 @@ var TodoItem = /** @class */ (function () {
     return TodoItem;
 }());
 exports.default = TodoItem; //외부에서 사용할 수 있도록 exporting 
+/**
+ * Functions
+ *
+ * - 람다함수
+ */
+var add = function (n1, n2) {
+    return n1 + n2;
+};
+function addFun(firstParam, secondParam) {
+    console.log(firstParam + secondParam);
+}
