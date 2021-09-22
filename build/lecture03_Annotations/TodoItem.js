@@ -1,10 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class TodoItem {
-    // public id : number; //접근제어자를 줄 수 있다. public, private, protected 사용가능. 
-    // public task : string;
-    // public complete : boolean;
-    constructor(id, task, complete) {
+    constructor(id, task, complete = false //default 로 false를 넣어줌 
+    ) {
         this.id = id;
         this.task = task;
         this.complete = complete;

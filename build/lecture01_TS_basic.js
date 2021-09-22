@@ -25,7 +25,7 @@
  *
  * let year : number = 2020;
  */
-var year = 2020; //type annotation 
+let year = 2020; //type annotation 
 function sumNumbers(num1, num2) {
     return num1 + num2;
 }
@@ -40,6 +40,6 @@ function sumNumbers(num1, num2) {
  * - 직접적으로 타입을 선언하지 않는 방식을 타입 추론이라고 한다.
  *
  */
-var lastname = 'kim'; // let lastname : string
-var othername; //let othername : any // any 타입은 어떤 값이든 담을 수 있는 변수다 라는 의미다. 즉, JS의 변수처럼 어떠한 데이터 형식을 답을 수 있는 변수가됨. 
+let lastname = 'kim'; // let lastname : string
+let othername; //let othername : any // any 타입은 어떤 값이든 담을 수 있는 변수다 라는 의미다. 즉, JS의 변수처럼 어떠한 데이터 형식을 답을 수 있는 변수가됨. 
 othername = 'kim';
