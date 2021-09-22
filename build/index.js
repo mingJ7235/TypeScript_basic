@@ -3,9 +3,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const TodoItem_1 = __importDefault(require("./lecture02_Annotations/TodoItem"));
-const data_1 = __importDefault(require("./lecture03_Annotations/data"));
-const TodoCollections_1 = __importDefault(require("./lecture03_Annotations/TodoCollections"));
+const TodoItem_1 = __importDefault(require("./lecture05_Generic_type/TodoItem"));
+const data_1 = __importDefault(require("./lecture05_Generic_type/data"));
+const TodoCollections_1 = __importDefault(require("./lecture05_Generic_type/TodoCollections"));
 /**
  * tsc 명령으로 ts파일을 실행시키면 트랜스컴파일이 되면서 js 파일이 생성된다.
  */
@@ -27,4 +27,7 @@ myTodoCollection.addTodo("JS 공부하기");
 myTodoCollection.addTodo("친구만나기 ");
 myTodoCollection.markComplete(3, true);
 console.log(`${myTodoCollection.userName}`);
-myTodoCollection.todoItems.forEach((item) => item.printDetails());
+//myTodoCollection.removeComplete();
+myTodoCollection.getTodoItems(false).forEach((item) => item.printDetails());
+console.log("-====================-");
+myTodoCollection.getTodoItems(true).forEach((item) => item.printDetails());

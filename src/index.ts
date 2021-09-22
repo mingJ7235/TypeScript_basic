@@ -1,6 +1,6 @@
-import TodoItem from "./lecture02_Annotations/TodoItem";
-import data from "./lecture03_Annotations/data"
-import TodoCollections from "./lecture03_Annotations/TodoCollections";
+import TodoItem from "./lecture05_Generic_type/TodoItem";
+import data from "./lecture05_Generic_type/data"
+import TodoCollections from "./lecture05_Generic_type/TodoCollections";
 
 /**
  * tsc 명령으로 ts파일을 실행시키면 트랜스컴파일이 되면서 js 파일이 생성된다. 
@@ -33,4 +33,11 @@ myTodoCollection.addTodo("친구만나기 ");
 myTodoCollection.markComplete(3, true);
 
 console.log(`${myTodoCollection.userName}`);
-myTodoCollection.todoItems.forEach((item) => item.printDetails()); 
+
+//myTodoCollection.removeComplete();
+
+myTodoCollection.getTodoItems(false).forEach((item) => item.printDetails());
+console.log("-====================-")
+myTodoCollection.getTodoItems(true).forEach((item) => item.printDetails());
+
+
