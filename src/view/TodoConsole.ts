@@ -17,7 +17,7 @@ class TodoConsole {
             (item) => new TodoItem (item.id, item.task, item.complete)
         )
 
-        this.todoCollection = new TodoCollections('My Todo List', sampleTodos);
+        this.todoCollection = new TodoCollections('혜연이랑 해야할것들 :) ', sampleTodos);
     }
 
     displayTodoList () : void {

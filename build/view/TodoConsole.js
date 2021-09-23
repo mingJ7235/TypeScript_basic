@@ -31,7 +31,7 @@ class TodoConsole {
     constructor() {
         this.showCompleted = true;
         const sampleTodos = data_1.default.map((item) => new TodoItem_1.default(item.id, item.task, item.complete));
-        this.todoCollection = new TodoCollections_1.default('My Todo List', sampleTodos);
+        this.todoCollection = new TodoCollections_1.default('혜연이랑 해야할것들 :) ', sampleTodos);
     }
     displayTodoList() {
         console.log(`=====${this.todoCollection.userName}=====` +
