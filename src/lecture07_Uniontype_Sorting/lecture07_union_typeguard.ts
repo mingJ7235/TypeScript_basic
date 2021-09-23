@@ -28,3 +28,24 @@ let collection : number[] | string = "1234,234"
 if( typeof collection === 'string') {
     collection.split (',');
 }
+
+
+//Type Guard
+let data : string | number[] ;
+function isString (data : string | number[]) : data is string { // is 는 type guard에만 사용하는 연산자
+            //string 타입이라고 단언 // split은 string 만이 가지고 있는 프로퍼티
+    return ( <string> data).split !== undefined;
+}
+
+ data = 'TypeScript';
+
+
+ if (typeof data === 'string') {
+     
+ }
+
+ if(isString(data)) { //data는 string
+     data.split(';');
+ } else { //data는 숫자배열
+    //number [] 
+ }
